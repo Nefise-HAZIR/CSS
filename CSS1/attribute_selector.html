@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target]{
+            background-color: cadetblue;
+        }
+        a[target="_top"]{
+            color: chartreuse;
+        }
+        [title~="nefise"]{ /* ~işareti yerine ^ olsaydı kelimenin içinde başlangıçta sadece nefise geçmesi yeterliydi css özelliği alabilmesi için */
+            font-size: 30px;   /* ~işareti yerine $ olsaydı kelimenin içinde sonda sadece nefise geçmesi yeterliydi css özelliği alabilmesi için */
+        }
+        [title|="nefise"]{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.linkedin.com/" target="_blank" title="nefise">Linkdeln</a>
+    <a href="https://www.udemy.com/" target="_top" title="nefise hazır">Udemy</a>
+</body>
+</html>

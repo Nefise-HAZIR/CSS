@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .dropdawn{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdawn-content{
+            position: absolute;
+             display: none; 
+            
+            
+            background-color: aquamarine;
+            box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            
+        }
+        .dropbtn{
+            background-color: royalblue;
+            color: seashell;
+            border: none;
+            width: 200px;
+            font-size: 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .dropdawn-content a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 12px 15px;
+            
+            
+            font-size: 20px;
+        }
+        .dropdawn:hover .dropdawn-content{
+            display: block;
+        }
+        .dropdawn-content a:hover{
+            background-color: tan;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="dropdawn"> 
+        <button class="dropbtn">
+             butona tıkla
+        </button>
+        <div class="dropdawn-content">
+            
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</body>
+</html>

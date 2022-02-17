@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{
+            border: 2px solid red;
+            padding: 10px 55px ;
+            margin: 5px;
+            width: 150px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-image: url('search.png');
+            background-repeat: no-repeat;
+            background-size: 45px;
+            font-size: larger;
+            color: white;
+
+
+        }
+        input[type=text]:focus{
+           background-color: blueviolet;
+           width: 100%;
+           
+        }
+        textarea{
+            border-radius: 10px;
+            border:crimson 3px solid;
+            width: 100%;
+            height: 150px;
+            font-size: 20px;
+            resize: none;
+        }
+        select{
+            width: 100%;
+            padding: 15px;
+            border:orangered solid 3px;
+            font-size: 20px;
+            background-color: paleturquoise;
+        }
+        input[type=button],input[type=reset],input[type=submit]{
+            background-color: paleturquoise;
+            padding: 15px;
+            font-size: 20px;
+            border:none;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <label for="nefise">Adınız</label>
+    <input type="text" name="nefise">
+    <label for="nefise">Soyadınız</label>
+    <input type="text" name="nefise">
+    <textarea >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur id deleniti dicta soluta! Consequuntur, perferendis quidem voluptates accusantium aspernatur libero totam possimus quasi ducimus nemo culpa perspiciatis illo velit quae? Est praesentium esse natus, numquam ut quasi ratione ex commodi vitae consectetur. Quisquam deserunt assumenda sequi repellat voluptate repellendus cupiditate blanditiis architecto voluptates a quam asperiores est enim saepe quae ipsa totam inventore, nam qui omnis fugiat minima, iusto itaque quibusdam. Velit quas, accusamus modi inventore earum nostrum molestias ipsam corporis, explicabo repellendus impedit asperiores molestiae eveniet! Eius amet praesentium ducimus debitis qui ab excepturi repudiandae, esse, ad laborum id.Nefise Hazır</textarea>
+    <select >
+        <option value="tr">türkiye</option>
+        <option value="fr">fransa</option>
+        <option value="en">ingiltere</option>
+    </select>
+    <input type="button" value="button">
+    <input type="reset" value="reset">
+    <input type="submit" value="submit">
+</body>
+</html>

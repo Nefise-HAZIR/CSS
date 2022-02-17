@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .first{
+            background-color: beige;
+            text-align: center;
+            padding: 25px 25px;
+        }
+        .nav{
+            background-color: black;
+            height: 50px;
+            overflow: hidden;
+
+        }
+        .nav a{
+            color: white;
+            padding: 15px;
+            float: left;
+            font-size: large;
+            text-decoration: none;
+        }
+        .nav a:hover{
+            background-color: burlywood;
+        }
+        .rows{
+            background-color:cadetblue ;
+
+        }
+        .cloumn{
+            float: left;
+            padding: 10px;
+        }
+        .cloumn.side{
+            width: 25%;
+        }
+        .cloumn.middle{
+            width: 50%;
+        }
+        .rows::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            padding: 25px;
+            background-color: coral;
+            text-align: center;
+                   }
+                   @media screen and (max-width:600px) 
+                   {
+                       .cloumn.side{
+                           width: 100%;
+                       }
+                       .cloumn.middle{
+                           width: 100%;
+                       }
+                       
+                   }
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h1>HEADER</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore autem aliquid in! Praesentium hic saepe quasi dolore aperiam adipisci.</p>
+    </div>
+    <div class="nav"> 
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="rows">
+        <div class="cloumn side">
+            <h2>baslık 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus voluptates ducimus sapiente nisi explicabo doloremque blanditiis animi expedita dignissimos?</p>
+          
+        </div>
+        <div  class="cloumn middle">
+            <h2>baslık 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque natus a, atque tempora deserunt, voluptatibus accusamus eaque minus nam tempore consequuntur pariatur? Culpa accusamus itaque vitae nulla corrupti quas vero maiores veniam eius expedita iusto possimus reprehenderit nostrum odio quisquam, ducimus qui error inventore sequi facere dolores officiis soluta minus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iusto voluptate fugiat quidem iste quasi sequi repellat praesentium culpa maiores assumenda explicabo voluptatem dignissimos quia mollitia, quod deserunt adipisci. Molestias modi unde at nesciunt, voluptas ab atque veniam saepe, cum cumque fugiat corporis soluta eius, dignissimos odit magni aperiam delectus!</p>
+
+        </div>
+        <div  class="cloumn side">
+            <h2>baslık 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corrupti non ex rem tempora nemo repellat aliquid nostrum id dolor?</p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

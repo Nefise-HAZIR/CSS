@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:read-only{
+            background-color: lawngreen;
+        }
+        input:read-write{
+            background-color: lightcoral;
+        }
+        :root{ /*  bütün html sayfasına css özelliği verir tabi özel olarak verilenler hariç */
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" readonly value="nefise">     <!-- kullanıcı içine bi sey yazamıyor sadece okuyabiliyor -->
+    <input type="text" value="hazır">
+</body>
+</html>

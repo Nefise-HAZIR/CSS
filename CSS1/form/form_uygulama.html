@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text],select{
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0px ;
+            box-sizing: border-box;
+            border:1px solid red;
+            border-radius: 10px;
+        }
+        input[type=text]:focus{
+              background-color: palevioletred;
+        }
+        div{
+            padding: 20px;
+            background-color: gainsboro;
+            border-radius: 10px;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding: 15px 20px;
+            margin-top:10px ;
+            background-color: green;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <form action="/HOME/FormuDoldur">
+             <label for="fistName">First Name</label>
+             <input type="text"name="fistname"placeholder="yourname">
+             <label for="lastName">Last Name</label>
+             <input type="text"name="lastname"placeholder="surname">
+              <label for="country">Country</label>
+              <select name="country" id="">
+                  <option value="tr">türkiye</option>
+                  <option value="fr">fransa</option>
+                  <option value="en">england</option>
+              </select>
+              <input type="submit" value="kaydet">
+        </form>
+    </div>
+</body>
+</html>

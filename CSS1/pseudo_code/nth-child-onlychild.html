@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:nth-child(2){
+            background-color: green;
+        }
+        
+       p:nth-last-child(1){   /* nth-last-of-type ile aynı  */
+            background-color: grey;
+        }
+        p:only-child{
+            background-color: indigo;   /*only-of-type daaynı işe yara alttaki divin tek çocuğu var ona css verdi */
+        }
+    </style>
+</head>
+<body>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <div><p>nefise</p><p>hazır</p></div>
+    <div><p>nefise</p></div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        *{
+            box-sizing: border-box;
+        }
+        .topmenu {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            background-color: gray;
+            
+        }
+         ul::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .topmenu li:hover{
+            background-color: black;
+        }
+        .topmenu  li{
+            float: left;
+            overflow: auto;
+            padding: 15px;
+            margin: 0px;
+        }
+        .topmenu  li a{
+            text-decoration: none;
+            color: honeydew;
+        }
+        .home{
+            background-color: green;
+        }
+        .clearfix{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .sidemenü li a{
+            display: block;
+        }
+        .sidemenü{
+            
+            width: 20%;
+           
+            margin: 0px;
+
+        }
+        .sidemenü ul{
+            margin: 0px;
+            padding: 0px;list-style-type: none;
+        }
+        .sidemenü li a{
+            padding: 10px;
+            margin: 4px;
+            text-decoration: none;
+            display: blocks;
+            background-color: #eee;
+            color: black;
+        }
+        .sidemenü li a:hover{
+            background-color: turquoise;
+        }
+        .content{
+            width: 75%;
+        }
+        .cloumn{
+            float: left;
+            padding: 15px;
+        }
+        .header{
+            color: white;
+            background-color:darkcyan;
+            padding: 15px;
+            text-align: center;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <ul class="topmenu " >
+            <li class="home"><a href="#home">HOME</a></li>
+            <li><a href="#condact">CONDACT</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+         </table>
+    <div class="clearfix">
+        <div class="cloumn sidemenü">
+        <ul>
+            <li><a href="#food"> Food</a></li>
+            <li><a href="#drink"> Drink</a></li>
+            <li><a href="#dress"> Dress</a></li>
+            <li><a href="#cleaning "> Cleaning products</a></li>
+            <li><a href="#makeup"> Makeup products</a></li>
+            <li><a href="#playground">The playground</a></li>
+            <li><a href="#glassware">Glassware</a></li>
+        </ul>
+        </div>
+
+    
+        <div class="cloumn content">
+            <div class="header">
+            <h1>SUPERMARKET</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, harum dolorem nostrum neque similique, fugiat quisquam quidem sequi aliquid porro, praesentium mollitia consectetur ipsum commodi ullam esse cum! Cum consectetur obcaecati unde, earum in atque deleniti similique amet odit deserunt quasi iusto quidem blanditiis alias?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quo, obcaecati maiores aliquid vero minus.food</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Fotter Text
+        </p>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div.image  {
+            
+            
+            border: 2px solid rgb(221, 198, 198);
+            
+
+        }
+        div.image img{
+            width: 100%;
+            height: auto;
+        }
+        div.yazı{
+            padding: 15px;
+            text-align: center;
+        }
+        div.image:hover{
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .responsive{
+            padding: 0px 6px;
+            width: 25%;
+            float: left;
+            
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media only screen and (max-width:700px){
+            .responsive{
+                width: 50%;
+            }
+        }
+        @media only screen and (max-width:500px){
+            .responsive{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="responsive">
+    <div class="image">
+        <a target="_blank" href="1.jpg"><img src="1.jpg" width="600" height="400" ></a>
+        <div class="yazı">
+            güzel resim
+        </div>
+    </div >
+   </div>
+  <div class="responsive">
+    <div class="image">
+        <a target="_blank" href="2.jpg"><img src="2.jpg" width="600" height="400" ></a>
+        <div class="yazı">
+            güzel resim
+        </div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="image">
+        <a target="_blank" href="3.jpg"><img src="3.jpg"width="600" height="400" ></a>
+        <div class="yazı">
+            güzel resim
+        </div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="image">
+        <a target="_blank" href="4.jpg"><img src="4.jpg"width="600" height="400" ></a>
+        <div class="yazı">
+            güzel resim
+        </div>
+    </div>
+  </div> 
+
+  <div class="clearfix">
+
+  </div>
+  
+  
+  <div>
+      <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, placeat eius. Rem hic temporibus aperiam doloribus itaque dolorum dolorem nulla veniam, totam laborum dolore, magnam odit eveniet numquam asperiores eum rerum autem ea voluptatibus non molestiae! Provident atque neque minima voluptas repellendus voluptatem porro facilis vel dolorum, numquam placeat cumque distinctio fugit? Sequi ducimus molestias, unde, voluptatum sunt voluptates eius nisi sint exercitationem officiis illo fuga asperiores eligendi! Odio beatae iure quod deleniti vitae non dolores, delectus dolorem ullam facilis maxime itaque aliquid et sed modi quisquam expedita quae error nesciunt soluta perferendis voluptatibus corporis sapiente? Ea ad id quis?
+      </p>
+  </div>
+        
+    
+</body>
+</html>

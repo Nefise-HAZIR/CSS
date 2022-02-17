@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            position: relative;  /* normalde static */
+            left: 30px;
+            border: aquamarine 2px solid;
+
+        }
+        .two{
+            position: fixed;
+            border: springgreen 2px solid;
+            bottom: 0px;
+            right: 0px;
+            width: 450px;
+            
+        }
+        .sticky{
+            position: sticky;
+            border: 2px solid sienna;
+            top: 0px;
+        }
+        img{
+            position:absolute;
+             z-index: -1;    /*resmin altında yazı olmasını sağlıyor */
+        }
+    </style>
+</head>
+<body>
+
+     <div class="sticky" >
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. In odit vitae magnam reprehenderit
+     </div>
+    <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam veritatis amet officiis veniam nam ducimus eaque voluptatem, optio quae beatae eum tempore exercitationem illo eius, aut alias qui id, labore reprehenderit repellendus? Quo, vitae exercitationem. Quisquam adipisci dignissimos, esse reiciendis ullam recusandae molestiae iure cum illum exercitationem dicta quam nulla tenetur explicabo neque praesentium corrupti enim eveniet perferendis nemo nostrum fugiat? Commodi reiciendis officiis tenetur maiores voluptate incidunt unde dolorem voluptas itaque ea? Vel accusantium fuga rem nihil nostrum inventore eum nisi porro aspernatur, quaerat exercitationem veritatis vitae adipisci maiores ipsum voluptate dolor quidem veniam eligendi pariatur. Doloremque nam, nulla incidunt voluptas quisquam rem aliquam accusamus labore facere blanditiis debitis similique nostrum ducimus ex esse necessitatibus provident aut neque molestiae impedit nisi voluptates, quia, assumenda consequuntur. Culpa labore libero nihil recusandae corrupti, nemo reprehenderit ipsam quo maiores reiciendis enim voluptatem similique laborum molestias quam asperiores. Rerum aliquam incidunt atque dicta labore cupiditate, hic similique et, officiis sit id eligendi?</p>
+    <p class="two">fixed Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam veritatis amet officiis veniam nam ducimus eaque voluptatem, optio quae beatae eum tempore exercitationem illo eius, aut alias qui id, labore reprehenderit repellendus? Quo, vitae exercitationem. Quisquam adipisci dignissimos, esse reiciendis ullam recusandae molestiae iure cum illum exercitationem dicta quam nulla tenetur explicabo neque praesentium corrupti enim eveniet perferendis nemo nostrum fugiat? Commodi reiciendis officiis tenetur maiores voluptate incidunt unde dolorem voluptas itaque ea? Vel accusantium fuga rem nihil nostrum inventore eum nisi porro aspernatur, quaerat exercitationem veritatis vitae adipisci maiores ipsum voluptate dolor quidem veniam eligendi pariatur. Doloremque nam, nulla incidunt voluptas quisquam rem aliquam accusamus labore facere blanditiis debitis similique nostrum ducimus ex esse necessitatibus provident aut neque molestiae impedit nisi voluptates, quia, assumenda consequuntur. Culpa labore libero nihil recusandae corrupti, nemo reprehenderit ipsam quo maiores reiciendis enim voluptatem similique laborum molestias quam asperiores. Rerum aliquam incidunt atque dicta labore cupiditate, hic similique et, officiis sit id eligendi?</p>
+     <br><br><br><br><br><br><br>
+    
+     <p style="padding: 2000px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, aliquid excepturi. Vel cupiditate harum laudantium.</p>
+     <img src="photo.jpg">
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, pariatur!</p>
+    
+
+</body>
+</html>

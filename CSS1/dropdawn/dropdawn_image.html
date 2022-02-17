@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .dropdawn{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdawn-content{
+            position: absolute;
+             display: none; 
+            right: 0px;
+            
+            background-color: aquamarine;
+            box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            
+        }
+        .dropbtn{
+            
+            border: none;
+            
+            cursor: pointer;
+        }
+        .dropdawn-content a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 12px 15px;
+            
+            
+            font-size: 20px;
+        }
+        .dropdawn:hover .dropdawn-content{
+            display: block;
+        }
+        .dropdawn-content a:hover{
+            background-color: tan;
+        }
+        .yazı{
+            background-color: thistle;
+            font-size: large;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="dropdawn" style="float:right;"> 
+        <button class="dropbtn">
+             <img src="agac.jpg" width="100" height="100">
+        </button>
+        <div class="dropdawn-content">
+            <img src="agac.jpg" width="500" height="500">
+            <p class="yazı">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius dolore rem ipsa veniam ratione quam.</p>
+        </div>
+    </div>
+</body>
+</html>

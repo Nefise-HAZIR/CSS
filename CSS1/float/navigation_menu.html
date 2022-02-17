@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        ul::after{
+            content: "";
+           clear:both;
+            display: table;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: inline-block;
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .can{
+            background-color: tomato;
+        }
+        li a:hover{
+             background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="can"><a href="#home">home</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#news">news</a></li>
+        <li><a href="#about">about</a></li>
+    </ul>
+</body>
+</html>

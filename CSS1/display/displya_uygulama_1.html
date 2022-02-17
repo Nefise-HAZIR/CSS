@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgbox{
+            float: left;
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 4px;
+            
+
+        }
+        button{
+            width: 100%;
+        }
+        img{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox" id="imgbox1"> resim 1 <br>
+        <img src="agac.jpg" style="width: 200px; height: 200px;">
+        <button onclick="removeElement()">kaldır</button>
+    </div >
+    <div class="imgbox" id="imgbox2" > resim 2 <br>
+        <img src="cicek.jpg"style="width: 200px; height: 200px;" >
+        <button onclick="changeVisibility()">gizle</button>
+    </div >
+    <div class="imgbox" id="imgbox3"> resim 3<br>
+         <img src="cukurova_logo.png" style="width: 200px; height: 200px;">
+         <button onclick="resetElement()">resetle</button>
+    </div>
+
+    <script>
+        function removeElement(){
+            document.getElementById("imgbox1").style.display="none";
+        }
+        function changeVisibility(){
+            document.getElementById("imgbox2").style.visibility="hidden";
+        }
+        function resetElement(){
+            document.getElementById("imgbox1").style.display="block";
+            document.getElementById("imgbox2").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

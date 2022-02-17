@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-of-type{   /* fisrt child la aynı body p nin atası ilk p etiketine bu ozellikler atanır  */
+            background-color: blue;
+            width: 150px;
+            height: 50px;
+        }
+        input[type=number]:in-range{
+            border: blue 1px dotted;
+        }
+        input[type=email]:invalid{      /*bunun mesela e mail olmadığı zaman border çeker */
+             border:firebrick 1px solid ;
+        }
+        p:last-child{   /* lastof type ile aynı  */
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <p>nefise</p>
+    <p>hazır</p>
+    <input type="number" min="1" max="10" value="5">
+    <input type="email" value="nefisehzrrrrrrrrrrrrr">  
+    <p>hazır</p>
+</body>
+</html>

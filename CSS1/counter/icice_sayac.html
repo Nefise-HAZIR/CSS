@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: x;
+        }
+        h1{
+            counter-reset: y;
+        }
+        h1::before{
+            counter-increment: x;
+            content: "section" counter(x) ".";
+        }
+        h2::before{
+            counter-increment: y;
+            content: counter(x) "." counter(y)" ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Eğitimler</h1>
+    <h2>Html</h2>
+    <h2>CSS</h2>
+
+    <h1>Kullanıcılar</h1>
+    <h2>Nefise</h2>
+    <h2>Duygu</h2>
+</body>
+</html>

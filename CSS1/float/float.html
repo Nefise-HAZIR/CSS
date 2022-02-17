@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       img.one{
+           float: right;
+           height: 200px;
+       }
+       .div1{
+           border: 1px solid rebeccapurple;
+           float: left;
+            overflow: auto; /*border içine sığmayınca bunu kullanırız */
+       }
+       .div1::after{
+           content: "";
+           clear:both;
+            display: table;/* aynı şekilde içine sığdırma işlemi için kullanılıyor */
+       }
+       .div2{
+           border: 1px solid blue;
+           clear: left;
+       }
+    </style>
+</head>
+<body>
+    <img class="one" src="photo.jpg">
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe eum repudiandae sapiente harum? Exercitationem eaque omnis, quas sequi esse nobis magnam soluta velit porro eius quae, ratione eligendi placeat vel voluptatem delectus sed aliquid qui quam similique distinctio assumenda, saepe quia. Facilis dolorem hic ex ab laborum veritatis iste repellendus, amet aperiam autem dignissimos excepturi adipisci expedita beatae alias illo fugit dolores! Quia consectetur architecto optio cum similique recusandae beatae voluptas dignissimos, aliquam dolores dicta magnam atque, adipisci tenetur. Nam, porro harum veniam excepturi animi velit tenetur laborum autem reiciendis alias illo recusandae adipisci quisquam facilis officia corrupti veritatis ullam consequatur. Commodi cumque delectus ratione sunt? Pariatur, ut neque eos, quas repellat, harum nulla dolores voluptas voluptatibus earum natus iste. Quisquam tempore iure itaque commodi aperiam omnis debitis repellat dignissimos harum doloribus architecto eius, numquam vel molestias totam aliquam iste explicabo officiis mollitia tenetur consectetur provident dolores ipsum. Officiis, iste!</div>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <br><br><br><br><br><br><br><br>
+    <div class="div1">
+        <img src="photo.jpg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde voluptatibus animi? Expedita esse quia quaerat ipsa in laboriosam at, quidem nemo reprehenderit numquam mollitia, ad rerum molestias saepe asperiores. Autem aliquid vero impedit laudantium, illo animi recusandae iste est necessitatibus earum soluta id aut sequi non accusamus fugit. Aperiam.
+    </div>
+
+</body>
+</html>

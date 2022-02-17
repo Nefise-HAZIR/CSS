@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: darkgrey;
+            padding: 10px;
+        }
+        .first{
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+        .nav{
+           
+            background-color: black;
+            overflow: hidden;
+            height: 50px;
+            width: 100%;
+           
+            
+        }
+        .nav a{
+             float: left;
+             padding: 15px 17px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        .nav a:hover{
+            background-color: blanchedalmond;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .left{
+            float: left;
+            width: 75%;
+        }
+        .right{
+            float: left;
+            width: 25%;
+        }
+        .card{
+            background-color: white;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px;
+        }
+        .footer{
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+            margin-top: 10px;
+        }
+        @media screen and (max-width:1401px) {
+            .left,.right{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h1>WELCOME</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam placeat sequi, ab ad veritatis excepturi!</p>
+    </div>
+    <div class="nav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#" style="float: right;" >link</a>
+    </div>
+    
+    <div class="row">
+        <div class="left">
+           <div class="card">
+
+              <h1>TITLE 1</h1>
+              <h5>describtion 30.01.2022</h5>
+              <img src="1.jpg" alt="resim" height="200" width="1000">
+              <p>some text</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam ad quas, quisquam harum dicta molestias veniam dignissimos eligendi magni voluptate ratione soluta quae aut iure culpa? Voluptas accusamus et voluptate deserunt, iusto dicta quaerat? Iusto molestias culpa est voluptatum nisi itaque. Asperiores expedita sit molestias. Sint repellendus consectetur nobis.</p>
+
+           </div>
+           <div class="card">
+            <h1>TITLE 1</h1>
+            <h5>describtion 30.01.2022</h5>
+            <img src="1.jpg" alt="resim" height="200"  width="1000">
+            <p>some text</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam ad quas, quisquam harum dicta molestias veniam dignissimos eligendi magni voluptate ratione soluta quae aut iure culpa? Voluptas accusamus et voluptate deserunt, iusto dicta quaerat? Iusto molestias culpa est voluptatum nisi itaque. Asperiores expedita sit molestias. Sint repellendus consectetur nobis.</p>
+           </div>
+
+
+        </div>
+        <div class="right">
+             <div class="card">
+                 <h2>ABOUT ME</h2>
+                 <img src="1.jpg" height="100" width="100">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maxime eligendi, dicta neque reprehenderit architecto alias nulla unde fugit labore.</p>
+             </div>
+             <div class="card">
+                 <h2>popular post</h2>
+                 <ul style="list-style-type: none;">
+                     <li><img src="1.jpg" height="100" width="100"></li>
+                     <li><img src="1.jpg" height="100" width="100"></li>
+                     <li><img src="1.jpg" height="100" width="100"></li>
+                 </ul>
+              
+                 
+                 
+                 
+             </div>
+             <div class="card">
+                 <h2>fallow me</h2>
+                 <p>some texts</p>
+             </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>footer</h2>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        .dropdawn-content{
+            position: absolute;
+             display: none; 
+            
+            
+            background-color:silver;
+            box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            
+        }
+        .dropbtn{
+            background-color: royalblue;
+            color: seashell;
+            border: none;
+            
+            
+            
+            cursor: pointer;
+        }
+      
+        .dropdawn-content a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 12px 15px;
+            
+            
+            font-size: 20px;
+        }
+        .dropdawn:hover .dropdawn-content{
+            display: block;
+        }
+        .dropdawn-content a:hover{
+            background-color:skyblue;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            
+        }
+        ul{
+            list-style-type: none;
+            background-color: black;
+            overflow: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+        li a:hover,.dropbtn:hover{
+            background-color: red;
+        }
+       
+
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li class="dropdawn"><a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+             <div class="dropdawn-content">
+           <a href="#">link1</a>
+           <a href="#">link2</a>
+           <a href="#">link3</a>
+        </div> 
+        </li>
+    </ul>
+    
+</body>
+</html>
